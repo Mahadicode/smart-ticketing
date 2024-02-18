@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P-Ticketing</title>
+
+  <!-- daisy ui and tailwind added  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- css file added  -->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="mx-32">
+    <!-- nav bar added  -->
+    <nav class="font-raleway">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <a class="btn btn-ghost text-2xl font-semibold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn text-green-500 bg-green-100">Button <span><img src="images/bus-icon.png" alt=""></span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-32">
+
+    <!-- banner section  -->
+    <section
+      class="flex justify-center items-center bg-[url(images/banner.png)] min-h-[550px] bg-no-repeat bg-cover bg-center">
+      <div class="max-w-[700px] text-center space-y-10">
+        <h1 class=" text-6xl font-raleway font-extrabold"><span class="text-white">End-to-End Travel with</span> <br>
+          <span class="text-lime-500">P Paribahan</span>
+        </h1>
+        <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The integrated
+          testing features
+          allow for a
+          streamlined .</p>
+        <button class="btn border-none text-white bg-lime-500">Buy Tickets</button>
+      </div>
+    </section>
+
+    <!-- offers section  -->
+    <section class="mt-28">
+      <h2 class="text-center text-5xl font-bold font-raleway">Best offers for you</h2>
+      <div class="flex gap-6 justify-center">
+        <div class="flex gap-28 bg-yellow-400 p-12 rounded-2xl mt-12">
+          <div class="space-y-2">
+            <h3 class="font-extrabold text-3xl">15% OFF</h3>
+            <h5 class="font-medium text-xl">on your next purchase</h5>
+            <p>use by january 2024</p>
+          </div>
+          <div class="py-4 space-y-2 ">
+            <h3 class="font-bold text-3xl">NEW15</h3>
+            <p>Coupon Code</p>
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-28 bg-[#F78C9C] p-12 rounded-2xl mt-12">
+          <div class="space-y-2">
+            <h3 class="font-extrabold text-3xl">20% OFF</h3>
+            <h5 class="font-medium text-xl">on your next purchase</h5>
+            <p>use by january 2024</p>
+          </div>
+          <div class="py-4 space-y-2 ">
+            <h3 class="font-bold text-3xl">Couple 20</h3>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticket Information section  -->
+    <section class="mt-[300px] font-raleway">
+      <h2 class="text-3xl font-bold text-center ">P.H Paribahan</h2>
+      <p class="mt-2 text-center ">Yes, you can run unit tests and view the results directly within the app. The
+        integrated
+        <br>testing
+        features allow
+        for a
+        streamlined .
+      </p>
+      <div class="mt-20 flex gap-[130px] items-center">
+
+        <div class="flex-1">
+
+          <div class=" flex justify-between">
+            <div class="flex gap-2">
+              <div><img src="images/bus-logo.png" alt=""></div>
+              <div>
+                <h3 class="text-3xl font-medium">Greenline Paribahan</h3>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+            </div>
+            <div class="flex">
+              <img src="images/seat-green-filled.png" alt="">
+              <p>40 seats left</p>
+            </div>
+          </div>
+          <div class="space-y-5 mt-3 p-3">
+
+            <div class="flex justify-between">
+              <p>Route</p>
+              <p class="font-medium">Dhaka-Sylhet</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Departure Time</p>
+              <p class="font-medium">9.00 P.M </p>
+            </div>
+            <div class="flex justify-between">
+              <div class="bg-gray-300 p-2 rounded-md">Boarding Point - Laxmipur</div>
+              <div class="bg-gray-300 p-2 rounded-md">Boarding Point - Laxmipur</div>
+              <div class="bg-gray-300 p-2 rounded-md">Boarding Point - Laxmipur</div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" text-center space-y-2">
+          <img src=" images/fare.png" alt="">
+          <h2 class="font-bold text-3xl">550 Taka</h2>
+          <p>Per Seat</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
