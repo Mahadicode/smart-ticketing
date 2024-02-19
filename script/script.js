@@ -41,7 +41,8 @@ for (const seat of seatElements) {
   
 function Next() {
   const firstOne = document.getElementById('first-one');
-  firstOne.classList.add('hidden')
+  firstOne.classList.add('hidden');
+  document.getElementById('successfull-section').classList.remove('hidden');
 }
 
 

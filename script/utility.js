@@ -28,7 +28,6 @@ function coupon() {
  let convertedTotalPrice = parseInt(totalPrice);
     const input = document.getElementById('coupon-value')
   const inputValue = input.value;
-  const applyBtn = document.getElementById('apply-btn')
   console.log(inputValue);
  
     if (inputValue === 'Couple 20') {
@@ -39,9 +38,17 @@ function coupon() {
       convertedTotalPrice = convertedTotalPrice - (convertedTotalPrice * 15 / 100);
        setInnerText('grand-total', convertedTotalPrice);
     }
-    
    
-  }
+}
+  
+// function btnDisable() {
+//   const input = document.getElementById('coupon-value')
+//   const inputValue = input.value;
+//   const btn = document.getElementById('apply-btn')
+//   if (inputValue === 'Couple 20' || inputValue === 'NEW15') {
+//     btn.removeAttribute('disabled');
+//    }
+// }
  
 
  
