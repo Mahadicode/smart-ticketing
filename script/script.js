@@ -35,8 +35,7 @@ for (const seat of seatElements) {
     totalCost('total-cost', parseInt(p3.innerText));
 
     // grand total price 
-    grandTotalCost('grand-total',parseInt(p3.innerText));
-   
+    grandTotalCost();
 })
   }
 

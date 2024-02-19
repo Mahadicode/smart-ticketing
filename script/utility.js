@@ -16,18 +16,28 @@ function totalCost(id, value) {
     setInnerText(id, sumTotalPrice);
 }
 
-// set grand total cost 
-function grandTotalCost(id, value) {
-   const totalPrice = document.getElementById(id).innerText;
-    const convertedTotalPrice = parseInt(totalPrice);
-    const sumTotalPrice = convertedTotalPrice +value;
-    setInnerText(id, sumTotalPrice);
+
+function grandTotalCost() {
+   const totalPrice = document.getElementById('total-cost').innerText;
+ let convertedTotalPrice = parseInt(totalPrice);
+  const input = document.getElementById('coupon-value')
+  const inputValue = input.value;
+  const applyBtn = document.getElementById('apply-btn')
+  console.log(inputValue);
+  applyBtn.addEventListener('click', function () {
+    if (inputValue === 'Couple 20') {
+      convertedTotalPrice = convertedTotalPrice - (convertedTotalPrice * 20 / 100);
+       setInnerText('grand-total', convertedTotalPrice);
+    }
+   else if (inputValue === 'NEW15') {
+      convertedTotalPrice = convertedTotalPrice - (convertedTotalPrice * 15 / 100);
+       setInnerText('grand-total', convertedTotalPrice);
+    }
+    
+   
+  })
+   setInnerText('grand-total', convertedTotalPrice);
 }
 
-function applyCoupon() {
-  const inputValue = document.getElementById('coupon-value').value
-  if (inputValue === 'NEW15' || inputValue === 'Couple 20') {
-    
-  }
-}
+
  
