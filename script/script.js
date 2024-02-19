@@ -37,7 +37,12 @@ for (const seat of seatElements) {
     // grand total price 
     grandTotalCost();
 })
-  }
+}
+  
+function Next() {
+  const firstOne = document.getElementById('first-one');
+  firstOne.classList.add('hidden')
+}
 
 
 
