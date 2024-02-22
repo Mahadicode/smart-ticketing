@@ -28,27 +28,23 @@ function coupon() {
  let convertedTotalPrice = parseInt(totalPrice);
     const input = document.getElementById('coupon-value')
   const inputValue = input.value;
-  console.log(inputValue);
+  // console.log(inputValue);
  
     if (inputValue === 'Couple 20') {
       convertedTotalPrice = convertedTotalPrice - (convertedTotalPrice * 20 / 100);
-       setInnerText('grand-total', convertedTotalPrice);
+      setInnerText('grand-total', convertedTotalPrice);
+        document.getElementById('coupon-input').classList.add('hidden');
     }
    else if (inputValue === 'NEW15') {
       convertedTotalPrice = convertedTotalPrice - (convertedTotalPrice * 15 / 100);
-       setInnerText('grand-total', convertedTotalPrice);
-    }
+      setInnerText('grand-total', convertedTotalPrice);
+        document.getElementById('coupon-input').classList.add('hidden');
+  }
+
    
 }
   
-// function btnDisable() {
-//   const input = document.getElementById('coupon-value')
-//   const inputValue = input.value;
-//   const btn = document.getElementById('apply-btn')
-//   if (inputValue === 'Couple 20' || inputValue === 'NEW15') {
-//     btn.removeAttribute('disabled');
-//    }
-// }
+
  
 
  

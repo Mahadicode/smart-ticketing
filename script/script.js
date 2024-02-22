@@ -12,10 +12,10 @@ for (const seat of seatElements) {
     const seatId = seat.innerText;
     availableSeat = availableSeat - 1;
     selectedSeat = selectedSeat + 1;
-     setBackgroundColorById(seatId);
+    if (selectedSeat > 4) return;
     setInnerText('seats-left', availableSeat)
     setInnerText('selected-seat', selectedSeat);
-
+ setBackgroundColorById(seatId);
     // show selected tickets 
     const seatName = e.target.innerText;
     const bookingSeatContainer = document.getElementById('booking-seat-container')
